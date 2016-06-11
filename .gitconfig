@@ -1,0 +1,21 @@
+[user]
+	name = Gil Brechbuhler
+	email = gibre12@gmail.com
+[alias]
+	last = log -1 HEAD
+	cm = commit
+	ck = checkout
+	st = status
+	br = branch
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+        ui = auto
+[merge]
+        tool = vimdiff
+[push]
+	default = simple
+[pull]
+	rebase = true
