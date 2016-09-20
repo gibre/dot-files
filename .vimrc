@@ -126,11 +126,17 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'unblevable/quick-scope'
 
+Plug 'saltstack/salt-vim'
+
 call plug#end()
 
 """"""""""""""""""""
 " General settings "
 """"""""""""""""""""
+
+syntax on
+set nocompatible
+filetype plugin indent on
 
 set hidden
 
@@ -169,7 +175,7 @@ set foldmethod=indent
 set foldlevel=99
 
 set mouse=a
-set listchars=tab:⇝·,trail:⚠,extends:⇝,precedes:⇜,eol:⚡
+set listchars=tab:⇝·,trail:⚠,extends:⇝,precedes:⇜,eol:✓
 set list
 
 set incsearch
@@ -219,13 +225,13 @@ set cursorline
 hi CursorLine term=bold gui=bold cterm=bold guibg=Grey40
 
 :set t_Co=256
-:set background=dark
 :color grb256
+:set background=dark
 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 
 if has("gui_running") || has('nvim')
-    colorscheme codeschool
+    "colorscheme codeschool
     set foldcolumn=0
 endif
 
